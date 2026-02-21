@@ -78,9 +78,18 @@ return [
     |
     */
 
-    'locale' => env('APP_LOCALE', 'en'),
+    // 'locale' => app()->getLocale(),
+    'locale' => 'fr',
 
     'fallback_locale' => env('APP_FALLBACK_LOCALE', 'en'),
+
+    'available_locales' => ['en', 'fr', 'ar'],
+    
+    'locale_names' => [
+        'en' => 'English',
+        'fr' => 'Français',
+        'ar' => 'العربية',
+    ],
 
     'faker_locale' => env('APP_FAKER_LOCALE', 'en_US'),
 
