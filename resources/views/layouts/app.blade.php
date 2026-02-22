@@ -53,33 +53,33 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('home', ['locale' => app()->getLocale()]) }}">
-                            <i class="fas fa-home"></i> {{ __('Home') }}
+                            <i class="fas fa-home"></i> {{ __('messages.Home') }}
                         </a>
                     </li>
                     
                     @auth
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('dashboard', ['locale' => app()->getLocale()]) }}">
-                                <i class="fas fa-tachometer-alt"></i> {{ __('Dashboard') }}
+                                <i class="fas fa-tachometer-alt"></i> {{ __('messages.Dashboard') }}
                             </a>
                         </li>
                         <li class="nav-item">
                             <form method="POST" action="{{ url(app()->getLocale() . '/logout') }}" class="d-inline">
                                 @csrf
                                 <button type="submit" class="nav-link btn btn-link">
-                                    <i class="fas fa-sign-out-alt"></i> {{ __('Logout') }}
+                                    <i class="fas fa-sign-out-alt"></i> {{ __('messages.Logout') }}
                                 </button>
                             </form>
                         </li>
                     @else
                         <li class="nav-item">
                             <a class="nav-link" href="{{ url(app()->getLocale() . '/login') }}">
-                                <i class="fas fa-sign-in-alt"></i> {{ __('Login') }}
+                                <i class="fas fa-sign-in-alt"></i> {{ __('messages.Login') }}
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ url(app()->getLocale() . '/register') }}">
-                                <i class="fas fa-user-plus"></i> {{ __('Register') }}
+                                <i class="fas fa-user-plus"></i> {{ __('messages.Register') }}
                             </a>
                         </li>
                     @endauth
@@ -112,7 +112,7 @@
     <!-- Footer -->
     <footer class="bg-light py-4 mt-5">
         <div class="container text-center">
-            <p class="mb-0">&copy; {{ date('Y') }} {{ config('app.name') }}. {{ __('All rights reserved.') }}</p>
+            <p class="mb-0">&copy; {{ date('Y') }} {{ config('app.name') }}. {{ __('messages.All rights reserved.') }}</p>
         </div>
     </footer>
 

@@ -10,8 +10,8 @@
                 <div class="card-body p-5">
                     <div class="text-center mb-4">
                         <i class="fas fa-user-plus fa-3x text-success mb-3"></i>
-                        <h3 class="fw-bold">{{ __('Register') }}</h3>
-                        <p class="text-muted">{{ __('Create your new account') }}</p>
+                        <h3 class="fw-bold">{{ __('messages.Register') }}</h3>
+                        <p class="text-muted">{{ __('messages.Create your new account') }}</p>
                     </div>
 
                     <form method="POST" action="{{ url(app()->getLocale() . '/register') }}">
@@ -19,7 +19,7 @@
 
                         <!-- Name -->
                         <div class="mb-3">
-                            <label for="name" class="form-label">{{ __('Name') }}</label>
+                            <label for="name" class="form-label">{{ __('messages.Name') }}</label>
                             <div class="input-group">
                                 <span class="input-group-text">
                                     <i class="fas fa-user"></i>
@@ -31,7 +31,7 @@
                                        required 
                                        autocomplete="name" 
                                        autofocus
-                                       placeholder="{{ __('Enter your name') }}">
+                                       placeholder="{{ __('messages.Enter your name') }}">
                                 @error('name')
                                     <div class="invalid-feedback">
                                         {{ $message }}
@@ -42,7 +42,7 @@
 
                         <!-- Email -->
                         <div class="mb-3">
-                            <label for="email" class="form-label">{{ __('Email Address') }}</label>
+                            <label for="email" class="form-label">{{ __('messages.Email Address') }}</label>
                             <div class="input-group">
                                 <span class="input-group-text">
                                     <i class="fas fa-envelope"></i>
@@ -53,7 +53,7 @@
                                        value="{{ old('email') }}" 
                                        required 
                                        autocomplete="email"
-                                       placeholder="{{ __('Enter your email') }}">
+                                       placeholder="{{ __('messages.Enter your email') }}">
                                 @error('email')
                                     <div class="invalid-feedback">
                                         {{ $message }}
@@ -64,7 +64,7 @@
 
                         <!-- Password -->
                         <div class="mb-3">
-                            <label for="password" class="form-label">{{ __('Password') }}</label>
+                            <label for="password" class="form-label">{{ __('messages.Password') }}</label>
                             <div class="input-group">
                                 <span class="input-group-text">
                                     <i class="fas fa-lock"></i>
@@ -74,19 +74,19 @@
                                        name="password" 
                                        required 
                                        autocomplete="new-password"
-                                       placeholder="{{ __('Enter your password') }}">
+                                       placeholder="{{ __('messages.Enter your password') }}">
                                 @error('password')
                                     <div class="invalid-feedback">
                                         {{ $message }}
                                     </div>
                                 @enderror
                             </div>
-                            <small class="text-muted">{{ __('Password must be at least 8 characters') }}</small>
+                            <small class="text-muted">{{ __('messages.Password must be at least 8 characters') }}</small>
                         </div>
 
                         <!-- Confirm Password -->
                         <div class="mb-3">
-                            <label for="password_confirmation" class="form-label">{{ __('Confirm Password') }}</label>
+                            <label for="password_confirmation" class="form-label">{{ __('messages.Confirm Password') }}</label>
                             <div class="input-group">
                                 <span class="input-group-text">
                                     <i class="fas fa-lock"></i>
@@ -96,23 +96,23 @@
                                        name="password_confirmation" 
                                        required 
                                        autocomplete="new-password"
-                                       placeholder="{{ __('Confirm your password') }}">
+                                       placeholder="{{ __('messages.Confirm your password') }}">
                             </div>
                         </div>
 
                         <!-- Submit Button -->
                         <div class="d-grid mb-3">
                             <button type="submit" class="btn btn-success btn-lg">
-                                <i class="fas fa-user-plus"></i> {{ __('Register') }}
+                                <i class="fas fa-user-plus"></i> {{ __('messages.Register') }}
                             </button>
                         </div>
 
                         <hr class="my-4">
 
                         <div class="text-center">
-                            <span class="text-muted">{{ __('Already have an account?') }}</span>
+                            <span class="text-muted">{{ __('messages.Already have an account?') }}</span>
                             <a href="{{ url(app()->getLocale() . '/login') }}" class="text-decoration-none fw-bold">
-                                {{ __('Login') }}
+                                {{ __('messages.Login') }}
                             </a>
                         </div>
                     </form>

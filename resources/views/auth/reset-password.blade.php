@@ -10,8 +10,8 @@
                 <div class="card-body p-5">
                     <div class="text-center mb-4">
                         <i class="fas fa-lock-open fa-3x text-info mb-3"></i>
-                        <h3 class="fw-bold">{{ __('Reset Password') }}</h3>
-                        <p class="text-muted">{{ __('Enter your new password') }}</p>
+                        <h3 class="fw-bold">{{ __('messages.Reset Password') }}</h3>
+                        <p class="text-muted">{{ __('messages.Enter your new password') }}</p>
                     </div>
 
                     <form method="POST" action="{{ url(app()->getLocale() . '/reset-password') }}">
@@ -21,7 +21,7 @@
 
                         <!-- Email -->
                         <div class="mb-3">
-                            <label for="email" class="form-label">{{ __('Email Address') }}</label>
+                            <label for="email" class="form-label">{{ __('messages.Email Address') }}</label>
                             <div class="input-group">
                                 <span class="input-group-text">
                                     <i class="fas fa-envelope"></i>
@@ -43,7 +43,7 @@
 
                         <!-- Password -->
                         <div class="mb-3">
-                            <label for="password" class="form-label">{{ __('New Password') }}</label>
+                            <label for="password" class="form-label">{{ __('messages.New Password') }}</label>
                             <div class="input-group">
                                 <span class="input-group-text">
                                     <i class="fas fa-lock"></i>
@@ -53,7 +53,7 @@
                                        name="password" 
                                        required 
                                        autocomplete="new-password"
-                                       placeholder="{{ __('Enter new password') }}">
+                                       placeholder="{{ __('messages.Enter new password') }}">
                                 @error('password')
                                     <div class="invalid-feedback">
                                         {{ $message }}
@@ -64,7 +64,7 @@
 
                         <!-- Confirm Password -->
                         <div class="mb-4">
-                            <label for="password_confirmation" class="form-label">{{ __('Confirm Password') }}</label>
+                            <label for="password_confirmation" class="form-label">{{ __('messages.Confirm Password') }}</label>
                             <div class="input-group">
                                 <span class="input-group-text">
                                     <i class="fas fa-lock"></i>
@@ -74,14 +74,14 @@
                                        name="password_confirmation" 
                                        required 
                                        autocomplete="new-password"
-                                       placeholder="{{ __('Confirm new password') }}">
+                                       placeholder="{{ __('messages.Confirm new password') }}">
                             </div>
                         </div>
 
                         <!-- Submit Button -->
                         <div class="d-grid">
                             <button type="submit" class="btn btn-info btn-lg">
-                                <i class="fas fa-check"></i> {{ __('Reset Password') }}
+                                <i class="fas fa-check"></i> {{ __('messages.Reset Password') }}
                             </button>
                         </div>
                     </form>

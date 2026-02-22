@@ -10,8 +10,8 @@
                 <div class="card-body p-5">
                     <div class="text-center mb-4">
                         <i class="fas fa-key fa-3x text-warning mb-3"></i>
-                        <h3 class="fw-bold">{{ __('Forgot Password') }}</h3>
-                        <p class="text-muted">{{ __('Enter your email to reset your password') }}</p>
+                        <h3 class="fw-bold">{{ __('messages.Forgot Password') }}</h3>
+                        <p class="text-muted">{{ __('messages.Enter your email to reset your password') }}</p>
                     </div>
 
                     @if (session('status'))
@@ -26,7 +26,7 @@
 
                         <!-- Email -->
                         <div class="mb-4">
-                            <label for="email" class="form-label">{{ __('Email Address') }}</label>
+                            <label for="email" class="form-label">{{ __('messages.Email Address') }}</label>
                             <div class="input-group">
                                 <span class="input-group-text">
                                     <i class="fas fa-envelope"></i>
@@ -38,7 +38,7 @@
                                        required 
                                        autocomplete="email" 
                                        autofocus
-                                       placeholder="{{ __('Enter your email') }}">
+                                       placeholder="{{ __('messages.Enter your email') }}">
                                 @error('email')
                                     <div class="invalid-feedback">
                                         {{ $message }}
@@ -50,7 +50,7 @@
                         <!-- Submit Button -->
                         <div class="d-grid mb-3">
                             <button type="submit" class="btn btn-warning btn-lg">
-                                <i class="fas fa-paper-plane"></i> {{ __('Send Password Reset Link') }}
+                                <i class="fas fa-paper-plane"></i> {{ __('messages.Send Password Reset Link') }}
                             </button>
                         </div>
 
@@ -58,7 +58,7 @@
 
                         <div class="text-center">
                             <a href="{{ url(app()->getLocale() . '/login') }}" class="text-decoration-none">
-                                <i class="fas fa-arrow-left"></i> {{ __('Back to Login') }}
+                                <i class="fas fa-arrow-left"></i> {{ __('messages.Back to Login') }}
                             </a>
                         </div>
                     </form>

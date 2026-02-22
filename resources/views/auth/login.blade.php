@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', __('Login'))
+@section('title', __('messages.Login'))
 
 @section('content')
 <div class="container">
@@ -10,8 +10,8 @@
                 <div class="card-body p-5">
                     <div class="text-center mb-4">
                         <i class="fas fa-lock fa-3x text-primary mb-3"></i>
-                        <h3 class="fw-bold">{{ __('Login') }}</h3>
-                        <p class="text-muted">{{ __('Sign in to your account') }}</p>
+                        <h3 class="fw-bold">{{ __('messages.Login') }}</h3>
+                        <p class="text-muted">{{ __('messages.Sign in to your account') }}</p>
                     </div>
 
                     @if (session('status'))
@@ -26,7 +26,7 @@
 
                         <!-- Email -->
                         <div class="mb-3">
-                            <label for="email" class="form-label">{{ __('Email Address') }}</label>
+                            <label for="email" class="form-label">{{ __('messages.Email Address') }}</label>
                             <div class="input-group">
                                 <span class="input-group-text">
                                     <i class="fas fa-envelope"></i>
@@ -38,7 +38,7 @@
                                        required 
                                        autocomplete="email" 
                                        autofocus
-                                       placeholder="{{ __('Enter your email') }}">
+                                       placeholder="{{ __('messages.Enter your email') }}">
                                 @error('email')
                                     <div class="invalid-feedback">
                                         {{ $message }}
@@ -49,7 +49,7 @@
 
                         <!-- Password -->
                         <div class="mb-3">
-                            <label for="password" class="form-label">{{ __('Password') }}</label>
+                            <label for="password" class="form-label">{{ __('messages.Password') }}</label>
                             <div class="input-group">
                                 <span class="input-group-text">
                                     <i class="fas fa-lock"></i>
@@ -59,7 +59,7 @@
                                        name="password" 
                                        required 
                                        autocomplete="current-password"
-                                       placeholder="{{ __('Enter your password') }}">
+                                       placeholder="{{ __('messages.Enter your password') }}">
                                 @error('password')
                                     <div class="invalid-feedback">
                                         {{ $message }}
@@ -72,30 +72,30 @@
                         <div class="mb-3 form-check">
                             <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
                             <label class="form-check-label" for="remember">
-                                {{ __('Remember Me') }}
+                                {{ __('messages.Remember Me') }}
                             </label>
                         </div>
 
                         <!-- Submit Button -->
                         <div class="d-grid mb-3">
                             <button type="submit" class="btn btn-primary btn-lg">
-                                <i class="fas fa-sign-in-alt"></i> {{ __('Login') }}
+                                <i class="fas fa-sign-in-alt"></i> {{ __('messages.Login') }}
                             </button>
                         </div>
 
                         <!-- Links -->
                         <div class="text-center">
                             <a href="{{ url(app()->getLocale() . '/forgot-password') }}" class="text-decoration-none">
-                                {{ __('Forgot Your Password?') }}
+                                {{ __('messages.Forgot Your Password?') }}
                             </a>
                         </div>
 
                         <hr class="my-4">
 
                         <div class="text-center">
-                            <span class="text-muted">{{ __("Don't have an account?") }}</span>
+                            <span class="text-muted">{{ __("messages.Don't have an account?") }}</span>
                             <a href="{{ url(app()->getLocale() . '/register') }}" class="text-decoration-none fw-bold">
-                                {{ __('Register') }}
+                                {{ __('messages.Register') }}
                             </a>
                         </div>
                     </form>
