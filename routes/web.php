@@ -17,7 +17,7 @@ Route::prefix('{locale}')->where(['locale' => 'en|fr|ar'])->middleware('setlocal
     
     // Page d'accueil publique
     Route::get('/', function () {
-        return view('welcome');
+        return view('home');
     })->name('home');
 
     // Routes d'authentification Fortify
@@ -30,7 +30,6 @@ Route::prefix('{locale}')->where(['locale' => 'en|fr|ar'])->middleware('setlocal
     Route::get('/register', [RegisteredUserController::class, 'create'])->name('register');
     Route::post('/register', [RegisteredUserController::class, 'store']);
 
-
     // Routes protégées par authentification
     Route::middleware('auth')->group(function () {
         Route::get('/dashboard', function () {
@@ -41,9 +40,6 @@ Route::prefix('{locale}')->where(['locale' => 'en|fr|ar'])->middleware('setlocal
 
 // Route pour changer la langue (sans préfixe)
 Route::get('/language/{locale}', function ($locale) {
-
-    // dd(request());
-
     if (in_array($locale, config('app.available_locales'))) {
         session(['locale' => $locale]);
     }

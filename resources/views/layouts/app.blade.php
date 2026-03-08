@@ -9,9 +9,11 @@
 
     <!-- Bootstrap CSS -->
     @if(app()->getLocale() === 'ar')
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+        {{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet"> --}}
+        <link href="{{ asset('dist/css/bootstrap.rtl.min.css') }}" rel="stylesheet">
     @else
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        {{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> --}}
+        <link href="{{ asset('dist/css/bootstrap.min.css') }}" rel="stylesheet">
     @endif
     
     <!-- Font Awesome -->
@@ -33,8 +35,9 @@
             color: white;
         }
     </style>
+
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
     
-    @livewireStyles
     @stack('styles')
 </head>
 <body>
@@ -42,7 +45,8 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
         <div class="container">
             <a class="navbar-brand" href="{{ route('home', ['locale' => app()->getLocale()]) }}">
-                <i class="fas fa-rocket"></i> {{ config('app.name', 'Laravel') }}
+                <img src="{{ asset('assets/brand/logo_100_40_1.png') }}" alt="Logo" width="100" height="40">  
+                {{-- {{ __('messages.brand') }} --}}
             </a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -118,8 +122,6 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    
-    @livewireScripts
     @stack('scripts')
 </body>
 </html>

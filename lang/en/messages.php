@@ -8,7 +8,8 @@ return [
     'Logout' => 'Logout',
     'Register' => 'Register',
     
-    // Welcome Page
+    // Home Page
+    'brand' => 'DZ Travels',
     'Welcome' => 'Welcome',
     'Welcome to' => 'Welcome to',
     'A powerful Laravel application with multi-language support and modern authentication system.' => 'A powerful Laravel application with multi-language support and modern authentication system.',
@@ -21,7 +22,32 @@ return [
     'Powered by Laravel 12, Livewire, and Bootstrap for dynamic experiences.' => 'Powered by Laravel 12, Livewire, and Bootstrap for dynamic experiences.',
     'Technologies Used' => 'Technologies Used',
     'All rights reserved.' => 'All rights reserved.',
-    
+    // Me
+    'Flights' => 'Flights',
+    'Book your next flight with ease.' => 'Book your next flight with ease.',
+    'Hotels' => 'Hotels',
+    'Book your next hotel stay with ease.' => 'Book your next hotel stay with ease.',
+    'Cars' => 'Cars',
+    'Book your next car rental with ease.' => 'Book your next car rental with ease.',
+    'Return' => 'Return',
+    'One Way' => 'One Way',
+    'Multiple Destinations' => 'Multiple Destinations',
+    'Departure' => 'Departure',
+    'Destination' => 'Destination',
+    'Date(s)' => 'Date(s)',
+    'Passenger(s)' => 'Passenger(s)',
+    'Adults' => 'Adults',
+    'Children' => 'Children',
+    'Infants' => 'Infants',
+    'Economy' => 'Economy',
+    'Premium Economy' => 'Premium Economy',
+    'Business' => 'Business',
+    'First' => 'First',
+    'Valiadte' => 'Valiadte',
+    'Research' => 'Research',
+    'Direct Flights Only' => 'Direct Flights Only',
+    'Companies' => 'Companies we work with',
+
     // Authentication
     'Sign in to your account' => 'Sign in to your account',
     'Email Address' => 'Email Address',
