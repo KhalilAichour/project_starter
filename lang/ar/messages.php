@@ -45,7 +45,7 @@ return [
     'Valiadte' => 'تأكيد',
     'Research' => 'البحث',
     'Direct Flights Only' => 'الرحلات المباشرة فقط',
-    'Companies' => 'شركات الطيران التي نعمل معها',
+    'Companies' => 'شركات الطيران الشريكة',
     
     // Authentication
     'Sign in to your account' => 'تسجيل الدخول إلى حسابك',

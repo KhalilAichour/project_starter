@@ -38,7 +38,7 @@
         </div>
     </div>
 
-    <div class="row mb-3">
+    <div class="row mb-5">
         <div class="col-sm-6">
             <div class="form-floating mb-3">
                 <input type="text" class="form-control" id="floatingdeparture" placeholder="Departure">
@@ -73,7 +73,7 @@
             </button>
         </div>
 
-        <div class="col-sm-3 mb-3">
+        <div class="col-sm-12 mb-3">
             <div class="form-check form-switch">
                 <input class="form-check-input" type="checkbox" role="switch" id="switchCheckDefault">
                 <label class="form-check-label" for="switchCheckDefault">{{ __('messages.Direct Flights Only') }}</label>
@@ -133,6 +133,310 @@
             </div>
         </div>
     </div>
+
+
+
+    <!-- Companies Section -->
+    <div class="card shadow-sm border-0 mb-5">
+        <div class="card-body p-4">
+            <h3 class="mb-3">{{ __('messages.Companies') }}</h3>
+            <div class="row text-center">
+                <div class="col-6 col-md-3 partner-companies mb-3">
+                    @include('companies.AH')
+                </div>
+                <div class="col-6 col-md-3 partner-companies mb-3">
+                    @include('companies.5O')
+                </div>
+                <div class="col-6 col-md-3 partner-companies mb-3">
+                    @include('companies.AC')
+                </div>
+                <div class="col-6 col-md-3 partner-companies mb-3">
+                    @include('companies.AF')
+                </div>
+                {{-- <div class="col-6 col-md-3 partner-companies mb-3">
+                    @include('companies.AT')
+                </div> --}}
+                <div class="col-6 col-md-3 partner-companies mb-3">
+                    @include('companies.AZ')
+                </div>
+                <div class="col-6 col-md-3 partner-companies mb-3">
+                    @include('companies.BA')
+                </div>
+                <div class="col-6 col-md-3 partner-companies mb-3">
+                    @include('companies.BJ')
+                </div>
+                {{-- <div class="col-6 col-md-3 partner-companies mb-3">
+                    @include('companies.EK')
+                </div> --}}
+                <div class="col-6 col-md-3 partner-companies mb-3">
+                    @include('companies.EY')
+                </div>
+                <div class="col-6 col-md-3 partner-companies mb-3">
+                    @include('companies.FR')
+                </div>
+                <div class="col-6 col-md-3 partner-companies mb-3">
+                    @include('companies.IB')
+                </div>
+                <div class="col-6 col-md-3 partner-companies mb-3">
+                    @include('companies.LH')
+                </div>
+                <div class="col-6 col-md-3 partner-companies mb-3">
+                    @include('companies.MS')
+                </div>
+                <div class="col-6 col-md-3 partner-companies mb-3">
+                    @include('companies.OR')
+                </div>
+                <div class="col-6 col-md-3 partner-companies mb-3">
+                    @include('companies.PC')
+                </div>
+                <div class="col-6 col-md-3 partner-companies mb-3">
+                    @include('companies.QR')
+                </div>
+                <div class="col-6 col-md-3 partner-companies mb-3">
+                    @include('companies.RJ')
+                </div>
+                <div class="col-6 col-md-3 partner-companies mb-3">
+                    @include('companies.SV')
+                </div>
+                <div class="col-6 col-md-3 partner-companies mb-3">
+                    @include('companies.TB')
+                </div>
+                <div class="col-6 col-md-3 partner-companies mb-3">
+                    @include('companies.TK')
+                </div>
+                <div class="col-6 col-md-3 partner-companies mb-3">
+                    @include('companies.TO')
+                </div>
+                <div class="col-6 col-md-3 partner-companies mb-3">
+                    @include('companies.TU')
+                </div>
+                <div class="col-6 col-md-3 partner-companies mb-3">
+                    @include('companies.U2')
+                </div>
+                <div class="col-6 col-md-3 partner-companies mb-3">
+                    @include('companies.V7')
+                </div>
+                <div class="col-6 col-md-3 partner-companies mb-3">
+                    @include('companies.VF')
+                </div>
+                <div class="col-6 col-md-3 partner-companies mb-3">
+                    @include('companies.VY')
+                </div>
+                <div class="col-6 col-md-3 partner-companies mb-3">
+                    @include('companies.W6')
+                </div>
+                <div class="col-6 col-md-3 partner-companies mb-3">
+                    @include('companies.X3')
+                </div>
+                <div class="col-6 col-md-3 partner-companies mb-3">
+                    @include('companies.XY')
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<div class="scroll-wrapper">
+    <button class="scroll-btn left" onclick="scrollMenu(-300)">&#8249;</button>
+
+    <div class="scrollmenu" id="scrollmenu">
+        <div class="product-card"></div>
+        <div class="product-card"></div>
+        <div class="product-card"></div>
+        <div class="product-card"></div>
+        <div class="product-card"></div>
+        <div class="product-card"></div>
+        <div class="product-card"></div>
+        <div class="product-card"></div>
+        <div class="product-card"></div>
+        <div class="product-card"></div>
+        <div class="product-card"></div>
+        <div class="product-card"></div>
+        <div class="product-card"></div>
+        <div class="product-card"></div>
+        <div class="product-card"></div>
+        <div class="product-card"></div>
+        <div class="product-card"></div>
+        <div class="product-card"></div>
+        <div class="product-card"></div>
+        <div class="product-card"></div>
+        <div class="product-card"></div>
+    </div>
+
+    <button class="scroll-btn right" onclick="scrollMenu(300)">&#8250;</button>
+</div>    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -143,29 +447,5 @@
     
     
 
-    <!-- Companies Section -->
-    <div class="card shadow-sm border-0 mb-5">
-        <div class="card-body p-4">
-            <h3 class="text-center mb-4">{{ __('messages.Companies') }}</h3>
-            <div class="row text-center">
-                <div class="col-md-3">
-                    <i class="fab fa-laravel fa-3x text-danger mb-2"></i>
-                    <p class="fw-bold">Laravel 12</p>
-                </div>
-                <div class="col-md-3">
-                    <i class="fab fa-bootstrap fa-3x text-primary mb-2"></i>
-                    <p class="fw-bold">Bootstrap 5</p>
-                </div>
-                <div class="col-md-3">
-                    <i class="fas fa-bolt fa-3x text-warning mb-2"></i>
-                    <p class="fw-bold">Livewire</p>
-                </div>
-                <div class="col-md-3">
-                    <i class="fas fa-lock fa-3x text-success mb-2"></i>
-                    <p class="fw-bold">Fortify</p>
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
 @endsection

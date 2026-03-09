@@ -45,7 +45,7 @@ return [
     'Valiadte' => 'Valider',
     'Research' => 'Rechercher',
     'Direct Flights Only' => 'Vols directs uniquement',
-    'Companies' => 'Compagnies avec lesquelles nous travaillons',
+    'Companies' => 'Compagnies aériennes partenaires',
 
     // Authentication
     'Sign in to your account' => 'Connectez-vous à votre compte',

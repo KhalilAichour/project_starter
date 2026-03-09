@@ -1,3 +1,20 @@
+[dir="rtl"] {
+    text-align: right;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.language-switcher .dropdown-item {
+    cursor: pointer;
+}
+
+.language-switcher .dropdown-item.active {
+    background-color: #0d6efd;
+    color: white;
+}
+
 .card-hover {
   color: #777;
 }
@@ -182,3 +199,53 @@
 #submitSearch{
   height: 58px;
 }
+
+.partner-companies{
+  zoom: 0.75;
+}
+
+
+/* Scrollable product list styles */
+
+.scroll-wrapper {
+  position: relative;
+  width: 100%;
+}
+.scrollmenu {
+  width: 100%;
+  height: fit-content;
+  white-space: nowrap;    
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+.product-card {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  float: none;
+  display: inline-block;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+.scroll-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.scroll-btn.left  { left:  0; }
+.scroll-btn.right { right: 0; }

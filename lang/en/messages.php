@@ -46,7 +46,7 @@ return [
     'Valiadte' => 'Valiadte',
     'Research' => 'Research',
     'Direct Flights Only' => 'Direct Flights Only',
-    'Companies' => 'Companies we work with',
+    'Companies' => 'Partner Airlines',
 
     // Authentication
     'Sign in to your account' => 'Sign in to your account',
